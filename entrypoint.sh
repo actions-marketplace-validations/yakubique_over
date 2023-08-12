@@ -2,4 +2,7 @@
 
 export PATH=$PATH:/app/
 
-over --config "$1" get
+CURRENT_VERSION=$(over --config $1 get)
+
+echo $CURRENT_VERSION
+echo "PACKAGE_VERSION=$CURRENT_VERSION" >> $GITHUB_ENV
