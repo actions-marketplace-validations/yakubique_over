@@ -1,0 +1,7 @@
+package:
+  name: GitHub Action for Over
+  version: v0.0.3
+  files:
+    - name: README.md
+      templates:
+        - yakubique/over@__VERSION__
