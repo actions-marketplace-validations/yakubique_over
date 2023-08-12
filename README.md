@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Get current version
-        uses: yakubique/over@v0.0.3
+        uses: yakubique/over@v1.0.0
       - name: Check
         run: |
           echo "=> ${{ env.PACKAGE_VERSION }}" # <== PACKAGE_VERSION was added by over-action
@@ -33,14 +33,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Get current version of package-1
-        uses: yakubique/over@v0.0.3
+        uses: yakubique/over@v1.0.0
         with:
           target: ./package-1/.over.yaml
       - name: Check
         run: |
           echo "=> ${{ env.PACKAGE_VERSION }}"
       - name: Get current version of package-2
-        uses: yakubique/over@v0.0.3
+        uses: yakubique/over@v1.0.0
         with:
           target: ./package-2/.over.yaml
       - name: Check

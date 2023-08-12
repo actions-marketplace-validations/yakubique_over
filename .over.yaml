@@ -1,6 +1,6 @@
 package:
   name: GitHub Action for Over
-  version: v0.0.3
+  version: v1.0.0
   files:
     - name: README.md
       templates:
