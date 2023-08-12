@@ -1,0 +1,16 @@
+name: It's over
+description: Manager versions of your project across different files easily
+author: "Vladimir <opa_oz> Levin"
+branding:
+  icon: package
+  color: purple
+inputs:
+  target:
+    description: Target config file (default='./.over.yaml')
+    required: false
+    default: './.over.yaml'
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - "${{ inputs.target }}"
